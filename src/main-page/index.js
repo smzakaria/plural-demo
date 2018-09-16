@@ -15,7 +15,7 @@ class App extends Component {
   }
 
   fetchHouses = () => {
-    fetch('/houses.json')
+    fetch('./houses.json')
     .then(rsp => rsp.json())
     .then( allHouses => {
       this.allHouses = allHouses;
